@@ -3,7 +3,7 @@ document.querySelector('#eights').addEventListener('click', eights)
 
 function compose () {
 	// Take in the notes
-	let allNotes = [`C-4`,`D-4`,`D#4`,`G-4`,`...`]
+	let allNotes = []
 	const fNote = document.querySelector('#firstNote').value
 	const secNote = document.querySelector('#secondNote').value
 	const thirdNote = document.querySelector('#thirdNote').value
@@ -19,19 +19,23 @@ function compose () {
 	//Composition happens here:
 
 	function compositionTime (numLines) {
+		allNotes[4] = '...'
+		allNotes[5] = '...'
+		allNotes[6] = '...'
+		allNotes[7] = '...'
 		document.querySelector('#displayNotes').innerText = ` `
 		document.querySelector('#displayNotes').innerText = `ModPlug Tracker  XM\n`
     		for(let i = 1; i <= numLines; i++){
         		document.querySelector('#displayNotes').innerText += `|${allNotes[Math.floor(Math.random() * allNotes.length)]}01......\n`
     		}
 	}
-
-		compositionTime (32)
+	
+	compositionTime (32) 
 }
 
 function eights () {
 		// Take in the notes
-		let allNotes = [`C-4`,`D-4`,`D#4`,`G-4`]
+		let allNotes = []
 		const fNote = document.querySelector('#firstNote').value
 		const secNote = document.querySelector('#secondNote').value
 		const thirdNote = document.querySelector('#thirdNote').value
@@ -52,6 +56,5 @@ function eights () {
 					document.querySelector('#displayNotes').innerText += `|${allNotes[Math.floor(Math.random() * allNotes.length)]}01......\n|...........\n`
 				}
 		}
-	
 		compEigths (16)
 	}
