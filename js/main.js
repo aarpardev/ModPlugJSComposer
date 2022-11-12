@@ -14,7 +14,12 @@ function compose () {
 	allNotes[2] = thirdNote
 	allNotes[3] = frthNote
 	allNotes.toString()
-	// alert( allNotes )
+	
+	let noteRegex = /^[A-G][-#]\d/i
+
+	if (noteRegex.test(allNotes) == false) { 
+		alert('Your notes must be formatted with the note and octave like this: C-4 or C#4')
+	} else {
 	
 	//Composition happens here:
 
@@ -30,7 +35,7 @@ function compose () {
     		}
 	}
 	
-	compositionTime (32) 
+	compositionTime (32) }
 }
 
 function eights () {
@@ -46,8 +51,12 @@ function eights () {
 		allNotes[2] = thirdNote
 		allNotes[3] = frthNote
 		allNotes.toString()
-		// alert( allNotes )
-		//Composition happens here:
+		
+		let noteRegex = /^[A-G][-#]\d/i
+
+	if (noteRegex.test(allNotes) == false) { 
+		alert('Your notes must be formatted with the note and octave like this: C-4 or C#4')
+	} else {
 	
 		function compEigths (numLines) {
 			document.querySelector('#displayNotes').innerText = ` `
@@ -56,5 +65,6 @@ function eights () {
 					document.querySelector('#displayNotes').innerText += `|${allNotes[Math.floor(Math.random() * allNotes.length)]}01......\n|...........\n`
 				}
 		}
-		compEigths (16)
+	compEigths (16) 
 	}
+}
