@@ -71,20 +71,9 @@ input {
   color:#33ff33;
 }
 
-#firstNote {
+#theNotes {
   background-color: #222222;
-}
-
-#secondNote {
-  background-color: #222222;
-}
-
-#thirdNote {
-  background-color: #222222;
-}
-
-#fourthNote {
-  background-color: #222222;
+  margin-top:20px;
 }
 
 ul{

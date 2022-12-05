@@ -19,17 +19,11 @@
 		<div id="app">
 		<h1>OpenMPT JS Tracker Music Maker</h1>
 
-		<p>This is a quick fun little Javascript app that composes random music for <a href ="https://openmpt.org" target="_blank">OpenMPT Tracker</a>. Simply enter some notes, and tap one of the two buttons for a random composition, scroll down, copy the resulting text starting from ModPlug Tracker XM, and paste it into a tracker channel in your project. (Note: currently works for .xm projects at this point, please change the format if you're using MOD, IT, S3M, etc).</p>
+		<p>This is a quick fun little Javascript app that composes random music for <a href ="https://openmpt.org" target="_blank">OpenMPT Tracker</a>. Simply enter some notes, select "Compose" or "Eights" for a random composition, scroll down, copy the resulting text starting from ModPlug Tracker XM, and paste it into a tracker channel in your project in OpenMPT. (Note: currently works for .xm projects at this point).</p>
 
 		<form>
-			<div class="notes"><label for="firstNote"> First Note: </label>
-			<input id="firstNote" type="text" placeholder="C-4" maxlength="3"></div>
-			<div class="notes"><label for="secondNote"> Second Note: </label>
-			<input id="secondNote" type="text" placeholder="D-4" maxlength="3"></div>
-			<div class="notes"><label for="thirdNote"> Third Note: </label>
-			<input id="thirdNote" type="text" placeholder="D#4" maxlength="3"></div>
-			<div class="notes"><label for="fourthNote"> Fourth Note: </label>
-			<input id="fourthNote" type="text" placeholder="G-4" maxlength="3"></div>
+			<div class="notes"><label for="theNotes">Enter Notes Here (use commas, no spaces): </label>
+			<input id="theNotes" type="text" placeholder="C-4,G-4,D#5" maxlength="128"></div>
 		</form>
 
 		<button id="compose" type="button" name="button">COMPOSE</button>
