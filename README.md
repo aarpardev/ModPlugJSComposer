@@ -5,6 +5,5 @@ This is a quick fun little Javascript app that can composes random music for Ope
 #Planned Features To Add (Depending on My Time as a Student)
 
 - drum slicing feature
-- notes based on an array
 - rhythmic presets
-- random FX generation
+- use of more than one instrument in a channel
