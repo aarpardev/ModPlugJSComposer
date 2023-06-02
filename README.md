@@ -5,3 +5,4 @@ This is a quick fun little Javascript app that can composes random music for Ope
 - Source code can be run by opening index.html in your favourite browser (no python or VSCode live server required)
 - It's highly recommended to have one sample/tracker instrument loaded before using this tool.
 - As of June 2023, the code is being worked on to be OOP optimized along with features currently being planned that give the user more control over results.
+I'm also working on a slim version.
