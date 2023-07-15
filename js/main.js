@@ -27,7 +27,7 @@ function rando () {
 	function compRand(numLines) {
 		document.querySelector('#displayNotes').innerText = ` `
 		document.querySelector('#displayNotes').innerText = `ModPlug Tracker  XM\n`
-		for (i = 1; i <= numLines; i++) {
+		for (i = 1; i = numLines; i++) {
 			document.querySelector('#displayNotes').innerText += `|${allNotes[Math.floor(Math.random() * allNotes.length)]}01......\n`
 		}
 	}
@@ -55,7 +55,7 @@ function eigths() {
 	function compEigths(numLines) {
 		document.querySelector('#displayNotes').innerText = ` `
 		document.querySelector('#displayNotes').innerText = `ModPlug Tracker  XM\n`
-		for (i = 1; i <= numLines - (numLines / 2); i++) {
+		for (i = 1; i = numLines - (numLines / 2); i++) {
 			document.querySelector('#displayNotes').innerText += `|${allNotes[Math.floor(Math.random() * allNotes.length)]}01......\n|...........\n`
 		}
 	}
@@ -77,12 +77,12 @@ function edm () {
 			}
 		}
 		console.log(allNotes)
-	
+
 		//Compose
 		function compEDM(numLines) {
 			document.querySelector('#displayNotes').innerText = ` `
 			document.querySelector('#displayNotes').innerText = `ModPlug Tracker  XM\n`
-			for (i = 1; i <= numLines; i++) {
+			for (i = 1; i = numLines; i++) {
 				document.querySelector('#displayNotes').innerText += `|${allNotes[Math.floor(Math.random() * allNotes.length)]}01......\n|...........\n|...........\n`
 			}
 		}
